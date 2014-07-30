@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>PrivateCore &#187; TripleO</title>
+	<atom:link href="https://privatecore.com/blogs/tag/tripleo/feed/" rel="self" type="application/rss+xml" />
+	<link>https://privatecore.com</link>
+	<description>The Private Computing Company</description>
+	<lastBuildDate>Wed, 30 Jul 2014 20:54:08 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.5.2</generator>
+		<item>
+		<title>OpenStack Summit May 2014 &#8211; Security Insights</title>
+		<link>https://privatecore.com/blogs/openstack-summit-2014-security-insights/</link>
+		<comments>https://privatecore.com/blogs/openstack-summit-2014-security-insights/#comments</comments>
+		<pubDate>Mon, 19 May 2014 17:13:54 +0000</pubDate>
+		<dc:creator>Oded</dc:creator>
+				<category><![CDATA[Cloud Security]]></category>
+		<category><![CDATA[OpenStack]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Server Security]]></category>
+		<category><![CDATA[System Integrity]]></category>
+		<category><![CDATA[Threats]]></category>
+		<category><![CDATA[Server]]></category>
+		<category><![CDATA[TripleO]]></category>
+
+		<guid isPermaLink="false">http://privatecore.com/?p=2394</guid>
+		<description><![CDATA[What an exciting event! This was my first time participating in the OpenStack Summit series, and the May 2014 summit was located in hot and rainy Atlanta GA left me with sense of being part of something big, and a strong desire to participate in the upcoming event (and not just because of the Paris [...]]]></description>
+				<content:encoded><![CDATA[<div id="attachment_1421" class="wp-caption alignright" style="width: 130px"><a href="https://privatecore.com/wp-content/uploads/2013/09/Oded-Web150h-4.jpg"><img class="size-full wp-image-1421" alt="Oded Horovitz" src="https://privatecore.com/wp-content/uploads/2013/09/Oded-Web150h-4.jpg" width="120" height="150" /></a><p class="wp-caption-text">Oded Horovitz</p></div>
+<p dir="ltr"><span style="font-size: medium;">What an exciting event! This was my first time participating in the OpenStack Summit series, and the May 2014 summit was located in hot and rainy Atlanta</span></p>
+<p><span style="font-size: medium;">GA left me with sense of being part of something big, and a strong desire to participate in the upcoming event (and not just because of the Paris location). As you entered the event, you could see the sponsor wall proudly presenting PrivateCore among many great OpenStack companies.</span></p>
+<h2><img class="size-medium wp-image-2399 alignnone" style="font-size: 13px;" alt="OpenStackSummitATLSponsors-3" src="https://privatecore.com/wp-content/uploads/2014/05/OpenStackSummitATLSponsors-3-300x134.png" width="300" height="134" /></h2>
+<p><span style="font-size: medium;">The show floor was very busy, and the casual dress code suggested this is going to be a fun event, where I would get my fair share of geeking out time. As you can read below, I wasn’t disappointed.</span></p>
+<p dir="ltr"><span style="font-size: medium;">OpenStack is a growing force as indicated by the bi-annual <a href="http://www.slideshare.net/ryan-lane/openstack-atlanta-user-survey">user-survey</a>.  And the survey tracks Dev/QA, PoC, and Production deployment stages independently. Thank you OpenStack community for some great information!</span></p>
+<h3><span style="font-size: 1.5em;">Lets talk Security</span></h3>
+<p dir="ltr"><span style="font-size: medium;">Being a founder of a security company, I have a slight security bias, and the first two days offered a wealth of security-related talks. Below are some notes that I thought might be interesting to PrivateCore blog readers.</span></p>
+<p><span style="font-size: medium;"><a href="http://openstacksummitmay2014atlanta.sched.org/speaker/russellhaering">Russell Haering</a> talk on <a href="http://sched.co/1lhQIMj">Multi-Tenant Bare Metal Provisioning with Ironic</a> triggered a set of question around firmware security. The problem presented by several attendees is the following: “how could one detect or prevent a bare metal tenant attempt to reflash the BIOS firmware or any other IO-device firmware?”.  My best recommendation for detecting firmware updates that will run on the main CPU is to take advantage of the Trusted Platform Module (TPM) chip on your servers to validate the firmware before any sensitive data touches the server. Our <a href="http://privatecore.com/vcage/index.html">vCage Manager</a> can be of help here. As for IO-device firmware, unfortunately, the answer is not as simple, and my design assumption is assume these IO-devices as malicious, and build your stack to defend against them.</span></p>
+<p><span style="font-size: medium;">Next was the <a href="http://openstacksummitmay2014atlanta.sched.org/speaker/bdpayne">Bryan D Payne</a> talk on <a href="http://sched.co/1dJ8vnF">Security for Private OpenStack clouds</a>. The talk was more of an open discussion with OpenStack operators rather than a presentation, providing the opportunity to hear back from the community about their best practices. What caught my attention was a comment from one of the security operators at Yahoo. His claim (if I understood correctly) was that they assume every guest VM will be compromised. So far no big news. Then he added that they assume compromised guest VMs will successfully escape to the hypervisor. Now that is some bold statement. Later he explained to me that through Nova message signing, even compromised hypervisors do not have much of a say on their Control Plane. Unfortunately, our conversation was interrupted, and I was left without understanding the full architecture, I hope to catch up with him back in the Bay Area.</span></p>
+<p><span style="font-size: medium;">While walking the expo floor I had a chance encounter at the demo theater with an interesting technology from <a href="http://www.hgst.com">HGST</a>. <a href="https://privatecore.com/wp-content/uploads/2014/05/OpenStackSummitATL-HGST.png"><img class="alignright size-medium wp-image-2395" alt="OpenStackSummitATL-HGST" src="https://privatecore.com/wp-content/uploads/2014/05/OpenStackSummitATL-HGST-300x138.png" width="300" height="138" /></a> As you can see, HGST is working on an open architecture, turning a hard-disk into a Linux server. The hard-disk has a dedicated CPU, memory and ethernet port. It runs Linux, and allows applications such as distributed file-system to run directly on the disk, saving CPU cycles, and all related trips on the server bus. My interest in this advancement relates to the possibility of turning this into an “hardware implant for script-kiddies”. In my blog earlier this year, I touched on a leaked NSA software implant called <a href="https://leaksource.files.wordpress.com/2013/12/nsa-ant-iratemonk.jpg?w=604&amp;h=781">IRATEMONK</a> &#8211; a firmware implant affecting many vendor hard-disk controllers, and allowing a stealthy MBR code injection. With the new work from HGST, anyone capable of writing a Linux application will likely be able to do the same. Technology innovation frequently happens without considering the security implications.</span></p>
+<h3><span style="font-size: 1.5em;">The Marketplace</span></h3>
+<p dir="ltr"><span style="font-size: medium;">As sponsors of the event we had a space<a href="https://privatecore.com/wp-content/uploads/2014/05/OpenStackSummitATL-OH-AN-booth-small.jpg"><img class="alignright size-medium wp-image-2398" alt="OpenStackSummitATL-OH-AN-booth-small" src="https://privatecore.com/wp-content/uploads/2014/05/OpenStackSummitATL-OH-AN-booth-small-300x225.jpg" width="300" height="225" /></a> to present our warez, and had many lively discussions with the summit crowd. To my pleasant surprise, most attendees we spoke with understood TPMs, Intel Trusted Execution Technology (Intel TXT) and general Trusted Computing concepts. This resulted  in lots of deep discussions about implementation of the technology in their environment &#8211; the OpenStack crowd understood the value of system integrity controls that PrivateCore brings to OpenStack.</span></p>
+<h3><span style="font-size: 1.5em;">Peek into PrivateCore roadmap</span></h3>
+<p dir="ltr"><span style="font-size: medium;">If you had a chance to join <a href="http://openstacksummitmay2014atlanta.sched.org/speaker/noslzzp">Keith Basil</a> <a href="http://www.slideshare.net/KeithBasil">TripleO</a> talk, you should have noticed the slide <a href="https://privatecore.com/wp-content/uploads/2014/05/OpenStackSummitATL-TripleO-KeithB.jpeg"><img class="alignright size-medium wp-image-2396" alt="OpenStackSummitATL-TripleO-KeithB" src="https://privatecore.com/wp-content/uploads/2014/05/OpenStackSummitATL-TripleO-KeithB-300x225.jpeg" width="300" height="225" /></a>showcasing PrivateCore’s technology integration into OpenStack on OpenStack (TripleO). We have not publicly shared details of integration, but if you are interested learning how trusted computing plays directly into cloud deployment and management, please get in <a href="http://privatecore.com/contact-us.1.html">contact</a> with us for a preview.</span></p>
+<p><span style="font-size: medium;">See you all at November’s OpenStack Summit in Paris!</span></p>
+]]></content:encoded>
+			<wfw:commentRss>https://privatecore.com/blogs/openstack-summit-2014-security-insights/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

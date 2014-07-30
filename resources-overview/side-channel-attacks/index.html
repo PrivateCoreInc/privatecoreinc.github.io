@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<!--<![endif]-->
+<head>
+<!-- Cloudflare header -->
+<meta name="globalsign-domain-verification" content="GQo_Oai0IjJqoNvcIfjx6LEa5EgkEHHvQWNIqDiqG7" />
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="UTF-8">
+	<title>Side Channel Attacks | PrivateCore</title>
+
+	<meta name="description" content="The Private Computing Company" />
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="../../wp-content/themes/Aqua/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600' rel='stylesheet' type='text/css'>
+	
+	<style type='text/css'>	
+		a:hover, a:focus { color:  ; }
+		.button:hover,a:hover.button,button:hover,input[type="submit"]:hover,input[type="reset"]:hover,	input[type="button"]:hover, .button_hilite, a.button_hilite { color: #fff; background-color:  ;}
+		.button_hilite, a.button_hilite { color: #fff; background-color:  ;}
+		.button_hilite:hover, a:hover.button_hilite { color: #fff; background-color: #374045;}
+				
+		.section_big_title h1 strong { color:  ;}
+		.section_featured_texts h3 a:hover { color:  ;}
+				
+		.breadcrumb a:hover{ color:   ;}
+		.post_meta a:hover{ color:   ;}
+		.portfolio_filter div.current{ background-color:   ;}
+			   
+		.next:hover,.prev:hover{ background-color:   ;}
+		.pagination .links a:hover{ background-color:   ;}
+		.hilite { background:   ;}
+		.price_column.price_column_featured ul li.price_column_title { background:   ;}
+		
+		.post_description blockquote{ border-left: 4px solid ; }
+			   
+		.info  h2{ background-color:   ;}
+		#footer a:hover { color:   ;}
+		#footer .boc_latest_post img:hover{ border: 3px solid   ;}
+		
+		.jcarousel-next-horizontal:hover, .jcarousel-prev-horizontal:hover { background-color:  ;}
+		
+	</style>	
+	
+	<!-- JS
+  ================================================== -->	
+	
+							
+	    			
+        <!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="icon" type="image/x-icon" href="../../wp-content/themes/Aqua/images/favicon.ico">	
+	
+	
+<!-- SEO Ultimate (http://www.seodesignsolutions.com/wordpress-seo/) -->
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Side Channel Attacks" />
+	<meta property="og:url" content="http://privatecore.com/resources-overview/side-channel-attacks/" />
+	<meta property="article:published_time" content="2013-07-15" />
+	<meta property="article:modified_time" content="2014-04-22" />
+	<meta property="og:site_name" content="PrivateCore" />
+	<meta name="twitter:card" content="summary" />
+<!-- /SEO Ultimate -->
+
+<link rel="alternate" type="application/rss+xml" title="PrivateCore &raquo; Feed" href="../../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="PrivateCore &raquo; Comments Feed" href="../../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="PrivateCore &raquo; Side Channel Attacks Comments Feed" href="feed/index.html" />
+<link rel='stylesheet' id='rs-settings-css'  href='../../wp-content/plugins/revslider/rs-plugin/css/settings.css%3Fver=3.5.2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='rs-captions-css'  href='../../wp-content/plugins/revslider/rs-plugin/css/captions.css%3Fver=3.5.2.css' type='text/css' media='all' />
+<script type='text/javascript' src='../../wp-includes/js/jquery/jquery.js%3Fver=1.8.3'></script>
+<script type='text/javascript' src='../../wp-content/themes/Aqua/js/jquery.easing.1.3.js%3Fver=3.5.2'></script>
+<script type='text/javascript' src='../../wp-content/themes/Aqua/js/aqua.common.js%3Fver=3.5.2'></script>
+<script type='text/javascript' src='../../wp-content/themes/Aqua/js/jquery.quicksand.js%3Fver=3.5.2'></script>
+<script type='text/javascript' src='../../wp-content/themes/Aqua/js/jquery.flexslider-min.js%3Fver=3.5.2'></script>
+<script type='text/javascript' src='../../wp-content/themes/Aqua/js/jquery.prettyPhoto.js%3Fver=3.5.2'></script>
+<script type='text/javascript' src='../../wp-content/themes/Aqua/js/jquery.jcarousel.min.js%3Fver=3.5.2'></script>
+<script type='text/javascript' src='../../wp-content/themes/Aqua/js/jquery.tipsy.js%3Fver=3.5.2'></script>
+<script type='text/javascript' src='../../wp-content/themes/Aqua/js/accordion_tracking.js%3Fver=3.5.2'></script>
+<script type='text/javascript' src='../../wp-content/themes/Aqua/js/auto_height.js%3Fver=3.5.2'></script>
+<script type='text/javascript' src='../../wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.plugins.min.js%3Fver=3.5.2'></script>
+<script type='text/javascript' src='../../wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.revolution.min.js%3Fver=3.5.2'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../xmlrpc.php%3Frsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Press Releases' href='../../team/press-releases/index.html' />
+<link rel='next' title='Secure Enterprise Cloud Bursting' href='../../use-cases/secure-enterprise-cloud-bursting/index.html' />
+<meta name="generator" content="WordPress 3.5.2" />
+<link rel='canonical' href='index.html' />
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-image: url('../../wp-content/themes/Aqua/images/main_bgr.png'); background-repeat: repeat; background-position: top left; background-attachment: scroll; }
+</style>
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-28191447-1', 'privatecore.com');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+</script>
+</head>
+<body class="page page-id-1030 page-child parent-pageid-676 page-template-default custom-background">
+  <div id="wrapper" class="full_wrapper">
+  
+  	<!-- Container -->
+	<div class="container" id="auto-min-height">
+	
+		<div class="header row">
+			<div class="eight columns header_left">
+								<a href="../../beta-registration/index.html" title="PrivateCore" rel="home">
+					<img src="../../wp-content/uploads/2013/02/masthead.png"  alt="PrivateCore"/>
+				</a>
+							</div>
+			<div class="eight columns">
+				<div class="header_right">
+					<div class="header_contacts clearfix">
+                        <div class="try_it_now_button_block">
+                        </div>
+																<div class="header_mail">info@privatecore.com</div>
+										</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Main Navigation -->
+		<div class="row no_bm">
+			<div class=" sixteen columns">
+			
+			<div id="menu" class="menu-main_menu-container"><ul><li><a href="../../beta-registration/index.html"><span class="home_icon"></span></a></li><li id="menu-item-101" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101"><a href="../../vcage/index.html">PrivateCore vCage<span></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-2454" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2454"><a href="../../vcage/index.html">vCage Overview</a></li>
+	<li id="menu-item-2448" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2448"><a href="../../vcage/vcage-features-benefits/index.html">Features and Benefits</a></li>
+	<li id="menu-item-2452" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2452"><a href="../../vcage/vcage-versions-pricing/index.html">Versions and Pricing</a></li>
+</ul>
+</li>
+<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="../../solution-overview/index.html">Solutions<span></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-468" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-468"><a href="../../solution-overview/index.html">Solution Overview</a></li>
+	<li id="menu-item-524" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-524"><a href="../../solution-overview/industry-news/index.html">Industry News</a></li>
+	<li id="menu-item-111" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111"><a href="../../solution-overview/attacks/index.html">Stealing data with physical attacks</a></li>
+	<li id="menu-item-487" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-487"><a href="../../solution-overview/case-studies/index.html">Attack Case Studies</a></li>
+</ul>
+</li>
+<li id="menu-item-362" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-362"><a href="../../use-cases/index.html">Use Cases<span></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-609" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-609"><a href="../../use-cases/index.html">Use Case Overview</a></li>
+	<li id="menu-item-1870" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1870"><a href="../../use-cases/openstack-trusted-computing-pools/index.html">Use Case: OpenStack Trusted Computing Pools</a></li>
+	<li id="menu-item-1324" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1324"><a href="../../use-cases/protecting-server-data-controlling-enterprise-insiders/index.html">Use Case: Data Center Insider Threat</a></li>
+	<li id="menu-item-1597" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1597"><a href="../../use-cases/prism-aware-cloud-servers/index.html">Use Case: PRISM-Aware Cloud Servers</a></li>
+</ul>
+</li>
+<li id="menu-item-725" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-menu-ancestor current-menu-parent current-page-parent current_page_parent current_page_ancestor menu-item-725"><a href="../index.html">Resources<span></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-729" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-page-parent menu-item-729"><a href="../index.html">Resources Overview</a></li>
+	<li id="menu-item-1517" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1517"><a href="../frequently-asked-questions/index.html">Frequently Asked Questions</a></li>
+	<li id="menu-item-1028" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1028"><a href="../solution-briefs/index.html">Solution Briefs</a></li>
+	<li id="menu-item-2049" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2049"><a href="../../videos/index.html">Videos</a></li>
+	<li id="menu-item-728" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-728"><a href="../physical-memory-attacks/index.html">Physical Memory Attacks</a></li>
+	<li id="menu-item-726" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-726"><a href="../server-attestation/index.html">Server Attestation</a></li>
+	<li id="menu-item-1065" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1030 current_page_item menu-item-1065"><a href="index.html">Side Channel Attacks</a></li>
+	<li id="menu-item-727" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-727"><a href="../useful-links/index.html">Useful Links</a></li>
+</ul>
+</li>
+<li id="menu-item-35" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35"><a href="../../team/index.html">Company<span></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-67" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-67"><a href="../../team/index.html">Team</a></li>
+	<li id="menu-item-1363" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1363"><a href="../../blogs/index.html">Blog</a></li>
+	<li id="menu-item-85" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-85"><a href="../../team/investors/index.html">Investors</a></li>
+	<li id="menu-item-1053" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1053"><a href="../../team/press-releases/index.html">Press Releases</a></li>
+	<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"><a href="../../team/news/index.html">News Coverage</a></li>
+	<li id="menu-item-1679" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1679"><a href="../../awards/index.html">Awards</a></li>
+	<li id="menu-item-2566" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2566"><a href="../../contact-us.1.html">Contact Us</a></li>
+</ul>
+</li>
+</ul></div>			
+			<select id="select_menu" onchange="location = this.value"><option value="">Select Page</option><option value="http://privatecore.com/vcage/">PrivateCore vCage</option>
+<option value="http://privatecore.com/vcage/">&nbsp;&nbsp;&nbsp;&nbsp;vCage Overview</option>
+<option value="http://privatecore.com/vcage/vcage-features-benefits/">&nbsp;&nbsp;&nbsp;&nbsp;Features and Benefits</option>
+<option value="http://privatecore.com/vcage/vcage-versions-pricing/">&nbsp;&nbsp;&nbsp;&nbsp;Versions and Pricing</option>
+<option value="http://privatecore.com/solution-overview/">Solutions</option>
+<option value="http://privatecore.com/solution-overview/">&nbsp;&nbsp;&nbsp;&nbsp;Solution Overview</option>
+<option value="http://privatecore.com/solution-overview/industry-news/">&nbsp;&nbsp;&nbsp;&nbsp;Industry News</option>
+<option value="http://privatecore.com/solution-overview/attacks/">&nbsp;&nbsp;&nbsp;&nbsp;Stealing data with physical attacks</option>
+<option value="http://privatecore.com/solution-overview/case-studies/">&nbsp;&nbsp;&nbsp;&nbsp;Attack Case Studies</option>
+<option value="http://privatecore.com/use-cases/">Use Cases</option>
+<option value="http://privatecore.com/use-cases/">&nbsp;&nbsp;&nbsp;&nbsp;Use Case Overview</option>
+<option value="http://privatecore.com/use-cases/openstack-trusted-computing-pools/">&nbsp;&nbsp;&nbsp;&nbsp;Use Case: OpenStack Trusted Computing Pools</option>
+<option value="http://privatecore.com/use-cases/protecting-server-data-controlling-enterprise-insiders/">&nbsp;&nbsp;&nbsp;&nbsp;Use Case: Data Center Insider Threat</option>
+<option value="http://privatecore.com/use-cases/prism-aware-cloud-servers/">&nbsp;&nbsp;&nbsp;&nbsp;Use Case: PRISM-Aware Cloud Servers</option>
+<option value="http://privatecore.com/resources-overview/">Resources</option>
+<option value="http://privatecore.com/resources-overview/">&nbsp;&nbsp;&nbsp;&nbsp;Resources Overview</option>
+<option value="http://privatecore.com/resources-overview/frequently-asked-questions/">&nbsp;&nbsp;&nbsp;&nbsp;Frequently Asked Questions</option>
+<option value="http://privatecore.com/resources-overview/solution-briefs/">&nbsp;&nbsp;&nbsp;&nbsp;Solution Briefs</option>
+<option value="http://privatecore.com/videos/">&nbsp;&nbsp;&nbsp;&nbsp;Videos</option>
+<option value="http://privatecore.com/resources-overview/physical-memory-attacks/">&nbsp;&nbsp;&nbsp;&nbsp;Physical Memory Attacks</option>
+<option value="http://privatecore.com/resources-overview/server-attestation/">&nbsp;&nbsp;&nbsp;&nbsp;Server Attestation</option>
+<option value="http://privatecore.com/resources-overview/side-channel-attacks/">&nbsp;&nbsp;&nbsp;&nbsp;Side Channel Attacks</option>
+<option value="http://privatecore.com/resources-overview/useful-links/">&nbsp;&nbsp;&nbsp;&nbsp;Useful Links</option>
+<option value="http://privatecore.com/team/">Company</option>
+<option value="http://privatecore.com/team/">&nbsp;&nbsp;&nbsp;&nbsp;Team</option>
+<option value="http://privatecore.com/blogs/">&nbsp;&nbsp;&nbsp;&nbsp;Blog</option>
+<option value="http://privatecore.com/team/investors/">&nbsp;&nbsp;&nbsp;&nbsp;Investors</option>
+<option value="http://privatecore.com/team/press-releases/">&nbsp;&nbsp;&nbsp;&nbsp;Press Releases</option>
+<option value="http://privatecore.com/team/news/">&nbsp;&nbsp;&nbsp;&nbsp;News Coverage</option>
+<option value="http://privatecore.com/awards/">&nbsp;&nbsp;&nbsp;&nbsp;Awards</option>
+<option value="http://privatecore.com/contact-us/">&nbsp;&nbsp;&nbsp;&nbsp;Contact Us</option>
+</select>							
+						
+			</div>
+		</div>
+		<!-- Main Navigation::END -->
+<div class="row">
+	<div class="sixteen columns">
+	    <div class="breadcrumb"><a class="first_bc" href="../../beta-registration/index.html"><span>Home</span></a><a href="../index.html" title="Resources Overview"><span>Resources Overview</span></a><a class="last_bc" href="index.html" title="Side Channel Attacks"><span>Side Channel Attacks</span></a></div>		<div class="page_heading"><h1>Side Channel Attacks</h1></div>
+	</div>
+</div>
+
+
+	<div class="row">
+
+		<!-- Post -->
+		<div class="post-1030 page type-page status-publish hentry" id="post-1030" >
+			<div class="sixteen columns">
+								<p><span style="font-size: medium;">PrivateCore helps mitigate some side channel attacks in virtualized environments.  Below is a listing of some of the current literature and research describing side channel attacks, particularly in cloud or hosted environments.</span></p>
+<li>
+<ul class="dotted">
+<h2><strong><a href="http://eprint.iacr.org/2014/248">Fine grain Cross-VM Attacks on Xen and VMware are possible!<br />
+</a></strong></h2>
+<p dir="ltr"><span style="font-size: medium;">A research paper exposing vulnerabilities in virtualized cloud servers by mounting Cross-VM cache attacks in Xen and VMware VMs targeting AES running in the target VM.</span></p>
+<p><span style="font-size: medium;"><strong>Tags</strong>: Side channel, VM, AES, cloud</span></li>
+</ul>
+<li>
+<h2><strong><a href="http://www.cs.cornell.edu/courses/cs6460/2011sp/papers/cloudsec-ccs09.pdf">Hey, You, Get Off of My Cloud: Exploring Information Leakage in Third-Party Compute Clouds</a></strong></h2>
+<p dir="ltr"><span style="font-size: medium;">A research paper discussing how to to place a hostile virtual machine (VM) adjacent to a target VM in infrastructure-as-a-service (IaaS) environments and use such placement to attempt cross-VM side channel attacks to extract information from a target VM on the same machine.</span></p>
+<p><span style="font-size: medium;"><strong>Tags</strong>: Side channel, VM, cloud</span></li>
+<li>
+<h2><strong><a href="http://www.cs.unc.edu/~reiter/papers/2012/CCS.pdf">Cross-VM Side Channels and Their Use to Extract Private Keys</a></strong></h2>
+<p><span style="font-size: medium;">This research paper describes an access-driven side channel attack by which a malicious virtual machine (VM) extracts ﬁne-grained information from a victim VM running on the same physical computer. This attack is the ﬁrst such attack demonstrated on a symmetric multiprocessing system virtualized using a modern virtual machine manager (Xen).</span></p>
+<p><span style="font-size: medium;"><strong>Tags</strong>: Side channel, VM, cloud</span></li>
+<li>
+<h2><strong><a href="http://eprint.iacr.org/2014/161.pdf">“Ooh Aah&#8230; Just a Little Bit” : A small amount of side channel can go a long<br />
+way</a></strong></h2>
+<p dir="ltr"><span style="font-size: medium;">This paper describes a cache timing attack to extract information from the OpenSSL ECDSA implementation. The authors demonstrate that with as little as 200 signatures they are able to recover a 256-bit secp256k1 elliptic curve key. This is notably the same curve used in the Bitcoin protocol.<br />
+</span></p>
+<p><span style="font-size: medium;"><strong>Tags</strong>: Side channel, VM, cloud</span></li>
+<li>
+<h2><strong><a href="http://cr.yp.to/antiforgery/cachetiming-20050414.pdf">Cache-timing attacks on AES</a></strong></h2>
+<p dir="ltr"><span style="font-size: medium;">This research paper demonstrates complete AES key recovery from known-plaintext timings of a network server on another computer.</span></p>
+<p><span style="font-size: medium;"><strong>Tags</strong>: Side channel, ECDSA, OpenSSL</span></li>
+<li>
+<h2><strong><a href="http://pdos.csail.mit.edu/~taesoo/pubs/2012/stealthmem/stealthmem-slides.pdf">System-Level Protection Against Cache-Based Side Channel Attacks in the Cloud</a></strong></h2>
+<p><span style="font-size: medium;">This presentation from a University and Microsoft research describes System-Level Protection Against Cache-Based Side Channel Attacks in the Cloud.</span></p>
+<p><span style="font-size: medium;"><strong>Tags</strong>: Side channel, countermeasures</span></li>
+<li>
+<h2><strong><a href="http://css.csail.mit.edu/6.858/2011/readings/ht-cache.pdf">Cache Missing for Fun and Profit</a></strong></h2>
+<p><span style="font-size: medium;">A research paper highlighting that shared access to memory caches provides an easily used high bandwidth covert channel between threads as well as permitting a malicious thread to monitor the execution of another thread, allowing in many cases for theft of cryptographic keys.</span></p>
+<p><span style="font-size: medium;"><strong>Tags</strong>: Side channel, RSA</span></li>
+<li>
+<h2><strong><a href="http://software.intel.com/sites/default/files/m/3/1/0/052.pdf">Software mitigations to hedge AES against cache-based software side channel vulnerabilities</a></strong></h2>
+<p><span style="font-size: medium;">An Intel Corporation research paper investigates mitigations to protect AES-software against side channel vulnerabilities.</span></p>
+<p><span style="font-size: medium;"><strong>Tags</strong>: Side channel, countermeasures, AES</span></li>
+</ul>
+											</div>
+		</div>
+		<!-- Post :: END -->
+		
+	</div>
+
+
+            <div class="clearfix"></div>
+        </div>	
+	<!-- Container::END -->
+	<div id="footer" class="container">
+		<div class="row footer_inside">
+		
+		  <div class="four columns">
+		  					
+		  </div>
+
+		  <div class="four columns">
+		  					
+		  </div>
+
+		  <div class="four columns">
+		  					
+		  </div>
+
+		  <div class="four columns">
+		  						
+		  </div> 
+	  </div> 
+	<!-- Footer -->
+	  <div class="clear"></div>
+	  <div class="footer_btm">
+	  	<div class="footer_btm_inner">
+	  	
+	  		  	
+		  	<div id="powered">© 2014 :: PrivateCore</div>
+		</div>	  
+	  </div>
+	</div>
+	<!-- Footer::END -->
+	
+  </div>
+  
+  <div id="su-footer-links" style="text-align: center;"></div><script type='text/javascript'>
+/* <![CDATA[ */
+var SlimStatParams = {"ajaxurl":"http:\/\/privatecore.com\/wp-admin\/admin-ajax.php","id":"675931.167d3d523a6c46063934a00f0d73388d"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../wp-content/plugins/wp-slimstat/wp-slimstat.js'></script>
+
+    </body>
+</html>	
