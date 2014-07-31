@@ -1,0 +1,36 @@
+jQuery(document).ready(function($){
+
+    //accordion tracking
+    $('.acc_item').click(function () {
+        var elm = $(this);
+        var action = 'Close';
+        var page_title = $('head > title').text();
+        var title = 'Unknown';
+
+        if (elm.find('.accordion').hasClass('active_acc')) {
+            action = 'Open'
+        }
+        if (elm.find('.acc_heading').attr('class')) {
+            title = elm.find('.acc_heading').text();
+        }
+        title = title + ' | ' + page_title;
+        //send to google analytics
+        _gaq.push(['_trackEvent', 'Accordion', action, title]);
+    });
+
+    //tabs tracking
+    $('.tabs > a').click(function () {
+        var elm = $(this);
+        var action = 'Close';
+        var page_title = $('head > title').text();
+        var title = elm.text();
+
+        if (elm.hasClass('selected')) {
+            action = 'Open'
+        }
+        title = title + ' | ' + page_title;
+        //send to google analytics
+        _gaq.push(['_trackEvent', 'Tabs', action, title]);        
+    });
+
+});
