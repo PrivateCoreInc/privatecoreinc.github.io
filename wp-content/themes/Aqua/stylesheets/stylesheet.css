@@ -1821,8 +1821,7 @@ a:hover .img_overlay_zoom {
 
 /* Comments Section */
 .comments_section {
-	margin: 60px 0 60px;
-	display: none;
+	margin: 60px 0 60px;	
 }
 .comments_section label {
 	font-weight: normal;
