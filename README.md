@@ -1,4 +1,4 @@
 privatecoreinc.github.io
 ========================
 
-Initial checkin
+Initial checkin.
